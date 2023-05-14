@@ -1,0 +1,88 @@
+:root {
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 375px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 375px;
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid green;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+}
+
+h1 {
+  font-size: 1.9rem;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  word-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+button {
+  width: 49%;
+  display: inline-block;
+  cursor: pointer;
+  background-color: hsl(166, 100%, 37%);
+  color: white;
+}
+
+button:hover {
+  background-color: hsl(166, 100%, 27%);
+}
+
+input:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    max-width: 1440px;
+  }
+}
