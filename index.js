@@ -63,6 +63,7 @@ form.addEventListener("submit", (e) => {
   } else {
     if (str > 3999) {
       alert("Limit exceeded");
+      input.value = "";
       return;
     }
     for (let key in lookupTable) {
